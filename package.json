@@ -3,6 +3,7 @@
   "displayName": "Style Sorter",
   "version": "0.1.6",
   "description": "Sort your styles meaningfully",
+  "private": true,
   "keywords": [
     "css",
     "vscode-extension"
