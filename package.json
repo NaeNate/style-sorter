@@ -1,7 +1,7 @@
 {
   "name": "style-sorter",
   "displayName": "Style Sorter",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Sort your styles meaningfully",
   "keywords": [
     "css",
@@ -13,24 +13,24 @@
   "icon": "media/icon.png",
   "main": "dist/extension.js",
   "scripts": {
-    "build": "esbuild src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --minify",
+    "build": "esbuild src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --minify --platform=node",
     "package": "vsce package --no-dependencies",
     "publish": "vsce publish --no-dependencies"
   },
   "engines": {
-    "vscode": "^1.100.0"
+    "vscode": "^1.102.0"
   },
   "categories": [
     "Formatters"
   ],
   "dependencies": {
     "css-declaration-sorter": "^7.2.0",
-    "postcss": "^8.5.3"
+    "postcss": "^8.5.6"
   },
   "devDependencies": {
-    "@types/vscode": "^1.100.0",
-    "@vscode/vsce": "^3.4.1",
-    "esbuild": "^0.25.4",
+    "@types/vscode": "^1.102.0",
+    "@vscode/vsce": "^3.6.0",
+    "esbuild": "^0.25.8",
     "typescript": "^5.8.3"
   },
   "contributes": {

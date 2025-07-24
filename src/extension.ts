@@ -10,7 +10,11 @@ export const activate = (context: ExtensionContext) => {
     if (!editor) return error("No editor open")
 
     const { document } = editor
-    if (document.languageId !== "css") return error("Not a CSS file")
+    const extension = document.fileName.split(".").pop()
+
+    if (document.languageId !== "css" && extension !== "css") {
+      return error("Not a CSS file")
+    }
 
     const text = document.getText()
 
