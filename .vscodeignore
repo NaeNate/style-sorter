@@ -1,5 +1,4 @@
 src
 media/icon.svg
 node_modules
-pnpm-lock.yaml
-pnpm-workspace.yaml
+bun.lock

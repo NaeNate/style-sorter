@@ -31,18 +31,30 @@ Sort your styles meaningfully
 
   - Concentric: Sort properties applying outside the box model, moving inward to intrinsic changes.
 
-    - Box
-    - Border
-    - Background
-    - Text
-    - Other
+    1. Box
+    2. Border
+    3. Background
+    4. Text
+    5. Other
 
   - SMACSS: Sort from most important, flow affecting properties, to least important properties.
-    - Positioning
-    - Visibility
-    - Box model
-    - Dimensions
-    - Text
+
+    1. Positioning
+    2. Visibility
+    3. Box model
+    4. Dimensions
+    5. Text
+
+  - Frakto: Order from the outermost layout and positioning rules, moving inward through structure, style, and interaction — inspired by the browser’s render tree.
+
+    1. Positioning
+    2. Box Model
+    3. Layout
+    4. Typography
+    5. Visual
+    6. Transform
+    7. Interaction
+    8. Miscellaneous
 
 ## Credits
 
